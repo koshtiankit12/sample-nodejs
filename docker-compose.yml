@@ -1,0 +1,9 @@
+version: '3.8'  # Specify the version of the Compose file format
+
+services:
+  app:
+    build:
+      context: .  # Use the current directory as the build context
+      dockerfile: Dockerfile  # Specify the Dockerfile name (optional if it's named "Dockerfile")
+    ports:
+      - "3000:3000"  # Map port 3000 of the host to port 3000 of the container
